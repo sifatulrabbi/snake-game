@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoard {
+  background-color: #ccc;
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  border: 2px solid black;
+}
+
+.snake {
+  background-color: green;
+  border: 0.35vmin solid black;
+}
+
+.food {
+  background-color: orangered;
+  border: 1vmin solid #ccc;
+  border-radius: 50%;
+}
+
+.speedControl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.snakeSpeed {
+  width: 90%;
+  padding: 0.2rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  box-shadow: 0 0 8px black;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+.snakeSpeed:hover {
+  transform: scale(1.05);
+}
